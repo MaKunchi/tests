@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <style type="text/css">
+   div,ul,li{
+    margin: 0px;
+    padding:0px;
+   }
+    #wrap{
+      width:400px;
+      height:200px;
+      position: relative;
+      overflow: hidden;
+    }
+    .slider{
+      width:300%;
+      height:100%;
+      background: red;
+      position: relative;
+      margin-left: 0px;
+      -webkit-animation:slide1 5s ease infinite;
+    }
+    .slider>li{
+      width:400px;
+      height:100%;
+      float:left;
+      display: block;
+    }
+    .slider>li:nth-child(1){
+      background: red;
+    }
+    .slider>li:nth-child(2){
+      background: blue; 
+    }
+    .slider>li:nth-child(3){
+      background: green;
+    }
+    .labels{
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      display: flex;
+    }
+    .labels>label{
+      display: block;
+      margin: 0 1px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+      padding: 10px 14px;
+      cursor:pointer;
+    }
+    #m01,#m02,#m03{
+      display: none;
+    }
+    /* Three animations*/
+    /*No.1*/
+    @-webkit-keyframes slide1{
+      0%{
+        margin-left: 0;
+      }
+      23%{
+        margin-left: 0;
+      }
+      33%{
+        margin-left: -400px;
+      }
+      56%{
+        margin-left: -400px;
+      }
+      66%{
+        margin-left: -800px;
+      }
+      90%{
+        margin-left: -800px;
+      }
+      100%{
+        margin-left: 0;
+      }
+    }
+      @-moz-keyframes slide1{
+      0%{
+        margin-left: 0;
+      }
+      23%{
+        margin-left: 0;
+      }
+      33%{
+        margin-left: -400px;
+      }
+      56%{
+        margin-left: -400px;
+      }
+      66%{
+        margin-left: -800px;
+      }
+      90%{
+        margin-left: -800px;
+      }
+      100%{
+        margin-left: 0;
+      }
+    }
+    /*animation 2*/
+    @-webkit-keyframes slide2{
+      0%{
+        margin-left: -400px;
+      }
+      23%{
+        margin-left: -400px;
+      }
+      33%{
+        margin-left: -800px;
+      }
+      56%{
+        margin-left: -800px;
+      }
+      66%{
+        margin-left: 0px;
+      }
+      90%{
+        margin-left: 0px;
+      }
+      100%{
+        margin-left: -400px;
+      }
+    }
+    /*animation 3*/
+      @-webkit-keyframes slide3{
+      0%{
+        margin-left: -800px;
+      }
+      23%{
+        margin-left: -800px;
+      }
+      33%{
+        margin-left: 0px;
+      }
+      56%{
+        margin-left: 0px;
+      }
+      66%{
+        margin-left: -400px;
+      }
+      90%{
+        margin-left: -400px;
+      }
+      100%{
+        margin-left: -800px;
+      }
+    }
+    /*change Mode*/
+     #m01:checked ~ #wrap>.slider{
+      -webkit-animation-name:slide1;
+    }
+    #m02:checked ~ #wrap>.slider{
+      -webkit-animation-name:slide2;
+    }
+    #m03:checked ~ #wrap>.slider{
+      -webkit-animation-name:slide3;
+    }
+    /*这里有个小BUG，当处于某一动画模式下，再点击相应的按钮无法跳转到相应的li，原因是单击按钮跳转到相应的li的原理是调用不同的动画，如果此时已经在此动画模式了，所以必须在点击按钮的那一刻设置取消所有动画模式，然而重新让相应的按钮checked*/
+    /*当按钮被单击时，短暂的取消动画，并让相应的li出现在页面内*/
+    #m01:active ~ #wrap>.slider{
+      -webkit-animation-name:none;
+      margin-left:0px;
+    }
+    #m02:active ~ #wrap>.slider{
+      -webkit-animation-name:none;
+      margin-left:-400px;
+    }
+    #m03:active ~ #wrap>.slider{
+      -webkit-animation-name:none;
+      margin-left:-800px;
+    }
+  </style>
+</head>
+<body>
+      <input type="radio" id="m01" name="Mode" checked="checked" />
+      <input type="radio" id="m02" name="Mode"/>
+      <input type="radio" id="m03" name="Mode"/>
+    <div id="wrap">
+      <ul class="slider">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="labels">
+        <label for="m01">1</label>
+        <label for="m02">2</label>
+        <label for="m03">3</label>
+      </div>
+    </div>
+</body>
+</html>

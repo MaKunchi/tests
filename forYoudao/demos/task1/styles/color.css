@@ -1,0 +1,95 @@
+/*头部导航*/
+.header>nav>ul>li{
+	color:#787b83;
+}
+.header>nav>ul>li:first-child,.header>nav>ul>li:last-child{
+	color:#e7504d;
+}
+/*旗帜广告部分*/
+.banner .bannerText>p:first-child{
+	color:#ffffff;
+}
+.banner .bannerText>p:nth-child(2){
+	color: #fffdfd;
+}
+.banner .bannerText>p:last-child{
+	color:#ffffff;
+}
+/*content1*/
+.content1>ul>li>p{
+	color:#767777;
+}
+/*content2*/
+.content2>p{
+	color:#323333;
+	opacity: 0.5;
+}
+/*asform*/
+.asform>div:not(:last-child){
+	color:#a8aaaa;
+}
+.province>div>ul>li:first-child{
+	color:#fff;
+}
+.province>div>ul>li:not(:first-child){
+	color:#323333;
+	opacity: 0.7;
+}
+.asform>div:last-child{
+	color:#fff;
+}
+/*content4*/
+.content4>div:last-child>p:nth-child(2){
+	color:#aaaaaa;
+}
+.content4>div:last-child>p:first-child{
+	color:#323333;
+}
+.content4>div:last-child>p:first-child>span:last-child{
+	color:#e95b58;
+}
+.content4>div:last-child>p:nth-child(3){
+	color:#e95b58;
+}
+/*lovelife*/
+.lovelife>div:first-child{
+	background: #e95b58;
+	color:#fff;
+}
+.lovelife>div:first-child>p:last-child{
+	border-color: #fff;
+}
+.lovelife>div:nth-child(2)>p:last-child{
+	color:#e95b58;
+	border-color: #e95b58;
+}
+.lovelife>div:nth-child(2)>p>span{
+	color:#ababaa;
+}
+/*joinus*/
+.joinus>div:first-child>span{
+	color:#e95b58;
+}
+.joinus>div:first-child>p{
+	color:#aaa;
+}
+.joinus>div:nth-child(2)>p{
+	opacity: 0.6;
+}
+.joinus>div:nth-child(3)>form>input,.joinus>div:nth-child(3)>form>textarea{
+	color: #231815;
+	background: #ededee;
+}
+.joinus>div:nth-child(3)>form>input[type="submit"]{
+	color:#323333;
+}
+/*footer*/
+footer>h2,footer>p{
+	color:#fff;
+}
+footer>form>input:last-child{
+	color:#fff;
+}
+footer>div{
+	color: #fff;
+}

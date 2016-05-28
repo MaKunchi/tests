@@ -1,0 +1,17 @@
+nav{
+	/* margin:0 auto; */
+	/* width:75%; */
+}
+main{
+	margin: 0 30px;
+}
+main>.banner-of-home{
+	width:400px;
+}
+.btn-group{
+	margin-right: 50px;
+	padding-top: 25px;
+}
+.hc-block{
+	width:470px;
+}

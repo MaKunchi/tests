@@ -1,0 +1,12 @@
+.inner{
+	border:thin gray solid;
+	background: #eee;
+	height:50px;
+}
+.container{
+	border:thin gray solid;
+	padding:20px;
+}
+.container .row .outer{
+	padding:10px;
+}

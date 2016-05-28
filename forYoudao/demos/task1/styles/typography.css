@@ -1,0 +1,179 @@
+/*头部导航*/
+.header>h1{
+	font-family: "黑体";
+	font-size:21px;
+	line-height: 31px;
+	text-align: right;
+}
+.header>nav>ul>li{
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+}
+.header>nav>ul>li:last-child{
+	line-height: 17px;
+	text-align: right;
+}
+.header>nav>ul>li:first-child{
+	border-bottom: 3px solid #e74f4d;
+	text-align: center;
+}
+/*旗帜广告部分*/
+.banner .bannerText>p:first-child{
+	font-size: 60px;
+}
+.banner .bannerText>p:nth-child(2){
+	font-size: 21px;
+	line-height: 37px;
+}
+.banner .bannerText>p:last-child{
+	font-size: 30px;
+	text-align: center;
+	line-height: 64px;
+	transition:all .3s ease 0s;
+}
+.banner .bannerText>p:last-child:hover{
+	background: #ffffff;
+	color:#e8504e;
+}
+/*content1*/
+.content1>ul>li>p{
+	font-size: 14px;
+	font-family: "黑体";
+	line-height: 18px;
+}
+/*content2*/
+.content2>p{
+	font-family: "黑体";
+	font-size: 54px;
+	line-height: 56.6px;
+}
+/*content3*/
+.content3>p:first-child{
+	font-family: "Microsoft Yahei";
+	font-size: 21px;
+	line-height: 21px;
+	color: #fff;
+}
+.content3>p:nth-of-type(2){
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	line-height: 31.27px;
+	color: #fff;
+}
+/*asform*/
+.asform>div:not(:last-child){
+	line-height: 36px;
+	font-size: 12px;
+}
+.asform>div:last-child{
+	line-height: 36px;
+	font-size: 14px;
+}
+/*活动专区*/
+.activity>div:not(:nth-of-child(2))>p:first-child{
+	font-size: 14px;
+	line-height: 26.55px;
+}
+/*content4*/
+.content4>div:last-child>p:first-child{
+	font-family: "宋体";
+	font-size:20px;
+}
+.content4>div:last-child>p:nth-child(2){
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 30px;
+}
+.content4>div:last-child>p:first-child>strong{
+	font-family: "宋体";
+	font-weight: bold;
+}
+.content4>div:last-child>p:first-child>span:first-of-type{
+	font-style: italic;
+}
+.content4>div:last-child>p:nth-child(3){
+	font-size: 12px;
+	line-height: 35px;
+}
+/*lovelife*/
+.lovelife>div:not(:last-child){
+	font-size: 21px;
+	font-family: "黑体";
+	line-height: 30px;
+}
+/*joinus*/
+.joinus>div:first-child>h2{
+	font-size: 21px;
+	line-height: 30px;
+	font-family: "黑体";
+}
+.joinus>div:first-child>span{
+	font-size: 21px;
+}
+.joinus>div:first-child>p{
+	font-size: 12px;
+	line-height: 18px;
+}
+.joinus>div:nth-child(2){
+
+}
+.joinus>div:nth-child(2)>h3{
+	font-size: 14px;
+	font-family: "黑体";
+	opacity: 0.8;
+}
+.joinus>div:nth-child(2)>p{
+	font-size: 12px;
+	line-height: 21px;
+	font-family: "宋体";
+	opacity: 0.6;
+}
+.joinus>div:nth-child(2)>a{
+	font-size: 12px;
+	line-height: 19px;
+	font-family: "宋体";
+	opacity: 0.6;
+}
+.joinus>div:nth-child(3)>form>input:not([type="submit"]),.joinus>div:nth-child(3)>form>textarea{
+	font-family: "宋体";
+	font-size: 12px;
+	opacity: 1;
+}
+.joinus>div:nth-child(3)>form>input[type="submit"]{
+	font-size: 14px;
+	font-family: "黑体";
+	cursor: pointer;
+	transition:all .3s ease 0s;
+}
+.joinus>div:nth-child(3)>form>input[type="submit"]:hover{
+	background: #e95b58;
+	color:white;
+}
+/*.footer*/
+.footer>h2{
+	font-family: "黑体";
+	font-size: 21px;
+	line-height: 48px;
+}
+.footer>p{
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 18px;
+}
+.footer>form>input{
+	border:none;
+}
+.footer>form>input:first-child{
+	font-size: 14px;
+	line-height: 27px;
+}
+.footer>form>input:last-child{
+	font-size: 15px;
+	line-height: 22.48px;
+	cursor: pointer;
+}
+.footer>div{
+	font-size: 12px;
+	font-family: "宋体";
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-Layout</title>
+	<style type="text/css">
+		div{
+			padding: 20px;
+			box-sizing: border-box;
+		}
+			.topWrap{
+				border: thin solid gray;
+				display: flex;
+				flex-flow: row nowrap;
+				align-items:center;
+				justify-content:space-between;
+			}
+		@media screen and (max-width:640px){
+			.topWrap{
+				flex-flow: row wrap;
+				align-items:flex-start;
+			}
+			.topWrap>div:nth-child(4){
+				order:-1;
+			}
+		}
+		.topWrap>div:not(:last-child){
+			width:150px;
+			border:thin #f00 solid;
+		}
+		.topWrap>div:last-child{
+			width:150px;
+			border:thin #0f0 solid;
+		}
+		.topWrap>div:nth-child(1){
+			height:120px;
+			
+		}
+		.topWrap>div:nth-child(2){
+			height:100px;
+			
+		}
+		.topWrap>div:nth-child(3){
+			height:40px;
+			margin-top: 10px;
+			
+		}
+		.topWrap>div:nth-child(4){
+			height:200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="topWrap">
+		<div >1</div>
+		<div >2</div>
+		<div >3</div>
+		<div >4</div>
+	</div>
+</body>
+</html>

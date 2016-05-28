@@ -1,0 +1,59 @@
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+ul, dl, ol {
+  list-style: none; }
+
+img,
+fieldset,
+input[type="submit"] {
+  border: 0 none; }
+
+img {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+html,
+body {
+  font-family: Microsoft YaHei;
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+/*   以上为重置样式 */
+  .grayArea{
+  	height:200px;
+  	width:400px;
+  	margin:-100px 0 0 -200px;
+  	background: #ccc;
+  	position: absolute;
+  	left:50%;
+  	top:50%;
+  	overflow: hidden;
+  }
+  .yellowArea{
+  	width:100px;
+  	height:100px;
+  	background: #fc0;
+  	border-radius:50%;
+  	position:absolute;
+  }
+  .upArea{
+  	left:-50px;
+  	top:-50px;
+  }
+    .downArea{
+  	right:-50px;
+  	bottom:-50px;
+  }
